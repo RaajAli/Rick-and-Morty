@@ -5,6 +5,21 @@ html {
 h1 {
     font-family: 'Wubba Lubba Dub Dub', arial;
     color: transparent;
-    text-shadow: 0 0 1px blueviolet; 
+    text-shadow: 0 0 1px yellow; 
     font-size: 60px;
+}
+
+.logo{
+    text-align: center;
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/9531.jpg");
+    background-repeat: repeat;
+    padding: 0.5em;
+}
+
+#character-bar {
+    height: 20vh;
+    background: black;
+    background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/9531.jpg");
+    display: flex;
+    justify-content:last baseline
 }
