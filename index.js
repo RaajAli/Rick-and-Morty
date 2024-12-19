@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
         })});
 
         characterBar.addEventListener("mouseover", (event) => {
-            event.target.style.color = "blue";
+            event.target.style.color = "white";
         });
         characterBar.addEventListener("mouseout", (event) => {
-                event.target.style.color = "black";
+                event.target.style.color = "yellow";
         });
         function showCharacter(objCharacter) {
             const img = document.createElement("span");

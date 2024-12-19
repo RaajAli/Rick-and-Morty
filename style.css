@@ -18,8 +18,25 @@ h1 {
 
 #character-bar {
     height: 20vh;
-    background: black;
+    background: yellow;
     background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/9531.jpg");
     display: flex;
-    justify-content:last baseline
+    justify-content:space-around;
+    align-items: center;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    font-family: 'Wubba Lubba Dub Dub', arial;
+    text-decoration-color: white;
+}
+
+#character-bar span {
+    height: 40%;
+    width: 15vw;
+    padding: 1%;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
