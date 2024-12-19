@@ -1,0 +1,10 @@
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-family: 'Wubba Lubba Dub Dub', arial;
+    color: transparent;
+    text-shadow: 0 0 1px blueviolet; 
+    font-size: 60px;
+}
