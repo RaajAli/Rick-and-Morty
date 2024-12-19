@@ -54,4 +54,36 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#reset-btn").addEventListener("click", (event) => {
             handleVotes(0, 0);
         })
-        
+
+const next = document.querySelector(".next");
+const previous = document.querySelector(".previous");
+const detailInfo = document.querySelector("#detailed-info");
+
+next.addEventListener("click", (e) => {
+    e.preventDefault();
+    const currentId = parseInt(cuteNames.getAttribute("data-id"));
+    if(currentId <= 800){ 
+        console.log(currentId);
+        let nextId = currentId + 1;
+        fetch(`https://rickandmortyapi.com/api/character/${nextId}`)
+        .then(response => response.json())
+        .then(characters =>  {
+            displayCharacters(characters);
+        });
+    }
+});
+
+previous.addEventListener("click", (e) => {
+    e.preventDefault();
+    const currentId = parseInt(cuteNames.getAttribute("data-id"));
+    if(currentId > 1){
+        console.log(currentId);
+        let previousId = currentId - 1;
+        fetch(`https://rickandmortyapi.com/api/character/${previousId}`)
+        .then(response => response.json())
+        .then(characters =>  {
+            displayCharacters(characters);
+        });
+    }
+});
+
