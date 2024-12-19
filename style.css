@@ -17,12 +17,12 @@ h1 {
 }
 
 #character-bar {
-    height: 20vh;
+    height: 10vh;
     background: yellow;
     background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/9531.jpg");
     display: flex;
-    justify-content:space-around;
-    align-items: center;
+    justify-content:space-between;
+    align-items: bottom;
     padding-bottom: 3vh;
     padding-top: 3vh;
     font-family: 'Wubba Lubba Dub Dub', arial;
@@ -31,9 +31,16 @@ h1 {
 
 #character-bar span {
     height: 40%;
-    width: 15vw;
+    width: 20vw;
     padding: 1%;
-
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+    align-items: center;
+    border-radius: 2em;
+    border: 1px solid w;
+    color: white;
 }
 
 html, body {

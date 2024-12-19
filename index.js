@@ -1,9 +1,9 @@
 const characterBar = document.getElementById("character-bar");
 const charactersImage = document.querySelector("#image");
-const cuteNames = document.querySelector("#name");
-const statusChar = document.querySelector("#vote-count");
-const genderChar = document.querySelector("#gender");
-const speciesChar = document.querySelector("#species");
+const charNames = document.querySelector("#name");
+const charStatus = document.querySelector("#vote-count");
+const charGender = document.querySelector("#gender");
+const charSpecies = document.querySelector("#species");
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch("https://rickandmortyapi.com/api/character/1,2,6,13,16")
@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
             characterBar.append(img);
         }
         function displayCharacters(objCharacters) {
-            cuteNames.setAttribute("data-id", objCharacters.id);
-            cuteNames.textContent = objCharacters.name;
-            statusChar.textContent = objCharacters.status;
-            genderChar.textContent = objCharacters.gender;
-           speciesChar.textContent = objCharacters.species;
+            charNames.setAttribute("data-id", objCharacters.id);
+            charNames.textContent = objCharacters.name;
+            charStatus.textContent = objCharacters.status;
+            charGender.textContent = objCharacters.gender;
+           charSpecies.textContent = objCharacters.species;
            charactersImage.src = objCharacters.image
            charactersImage.addEventListener('click', alertFunction);
         
@@ -61,7 +61,7 @@ const detailInfo = document.querySelector("#detailed-info");
 
 next.addEventListener("click", (e) => {
     e.preventDefault();
-    const currentId = parseInt(cuteNames.getAttribute("data-id"));
+    const currentId = parseInt(charNames.getAttribute("data-id"));
     if(currentId <= 800){ 
         console.log(currentId);
         let nextId = currentId + 1;
@@ -75,7 +75,7 @@ next.addEventListener("click", (e) => {
 
 previous.addEventListener("click", (e) => {
     e.preventDefault();
-    const currentId = parseInt(cuteNames.getAttribute("data-id"));
+    const currentId = parseInt(charNames.getAttribute("data-id"));
     if(currentId > 1){
         console.log(currentId);
         let previousId = currentId - 1;
