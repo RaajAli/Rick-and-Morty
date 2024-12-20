@@ -87,3 +87,23 @@ previous.addEventListener("click", (e) => {
     }
 });
 
+const randomButton = document.querySelector("#clickme");
+randomButton.addEventListener("click", randomEvent => {
+    randomEvent.preventDefault();
+    let currentrandomId = parseInt(charNames.getAttribute("data-id"));
+    
+    if(currentrandomId <= 800){
+        function getRandomArbitrary(min, max) {
+            currentrandomId = Math.floor(Math.random() * (max - min) + min);
+            return currentrandomId;
+        }
+          }
+        
+        getRandomArbitrary(1,800)
+        fetch(`https://rickandmortyapi.com/api/character/${currentrandomId}`)
+        .then(response => response.json())
+        .then(characters =>  {
+            displayCharacters(characters);
+            
+        });
+    })
