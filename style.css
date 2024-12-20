@@ -79,5 +79,17 @@ input[type="text"] {
 
 a:hover {
     background-color: white;
+    color: black;
 }
 
+.previous {
+    color: yellow;
+    font-size: 2vh;
+    font-family: 'Wubba Lubba Dub Dub', arial;
+}
+
+.next {
+    color: yellow;
+    font-size: 2vh;
+    font-family: 'Wubba Lubba Dub Dub', arial;
+}

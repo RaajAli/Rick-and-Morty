@@ -6,7 +6,7 @@ const charGender = document.querySelector("#gender");
 const charSpecies = document.querySelector("#species");
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("https://rickandmortyapi.com/api/character/1,2,6,13,16")
+    fetch("https://rickandmortyapi.com/api/character/15,14,6,13,16")
       .then(response => response.json())
       .then(characters => {
           characters.forEach(objCharacters => showCharacter(objCharacters));
