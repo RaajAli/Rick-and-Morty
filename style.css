@@ -11,7 +11,6 @@ h1 {
 
 .logo{
     text-align: center;
-    background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/9531.jpg");
     background-repeat: repeat;
     padding: 0.5em;
 }
@@ -91,5 +90,14 @@ a:hover {
 .next {
     color: yellow;
     font-size: 2vh;
+    font-family: 'Wubba Lubba Dub Dub', arial;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 200px;
+    font-size: 25;
+    bottom: 0px;
     font-family: 'Wubba Lubba Dub Dub', arial;
 }
