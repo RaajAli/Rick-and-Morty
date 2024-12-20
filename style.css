@@ -66,3 +66,8 @@ input[type="submit"], button {
     font-family: 'Wubba Lubba Dub Dub', arial;
 }
 
+input[type="text"] {
+    font-size: 2.5vh;
+    font-family: 'Wubba Lubba Dub Dub', arial;
+}
+
