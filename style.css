@@ -57,3 +57,12 @@ html, body {
     font-family: 'Wubba Lubba Dub Dub', arial;
     color: black;
 }
+
+input[type="submit"], button {
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Wubba Lubba Dub Dub', arial;
+}
+
