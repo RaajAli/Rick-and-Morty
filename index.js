@@ -6,7 +6,7 @@ const charGender = document.querySelector("#gender");
 const charSpecies = document.querySelector("#species");
 
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("https://rickandmortyapi.com/api/character/15,14,6,13,16")
+    fetch("https://rickandmortyapi.com/api/character/1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20")
       .then(response => response.json())
       .then(characters => {
           characters.forEach(objCharacters => showCharacter(objCharacters));
@@ -54,61 +54,3 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#reset-btn").addEventListener("click", (event) => {
             handleVotes(0, 0);
         })
-
-const next = document.querySelector(".next");
-const previous = document.querySelector(".previous");
-const detailInfo = document.querySelector("#detailed-info");
-
-
-
-next.addEventListener("click", (e) => {
-    e.preventDefault();
-    const currentId = parseInt(charNames.getAttribute("data-id"));
-    if(currentId <= 800){ 
-        console.log(currentId);
-        let nextId = currentId + 1;
-        fetch(`https://rickandmortyapi.com/api/character/${nextId}`)
-        .then(response => response.json())
-        .then(characters =>  {
-            displayCharacters(characters);
-        });
-    }
-});
-
-
-previous.addEventListener("click", (e) => {
-    e.preventDefault();
-    const currentId = parseInt(charNames.getAttribute("data-id"));
-    if(currentId > 1){
-        console.log(currentId);
-        let previousId = currentId - 1;
-        fetch(`https://rickandmortyapi.com/api/character/${previousId}`)
-        .then(response => response.json())
-        .then(characters =>  {
-            displayCharacters(characters);
-        });
-    }
-});
-
-
-
-const randomButton = document.querySelector("#clickme");
-randomButton.addEventListener("click", randomEvent => {
-    randomEvent.preventDefault();
-    let currentrandomId = parseInt(charNames.getAttribute("data-id"));
-    
-    if(currentrandomId <= 800){
-        function getRandomArbitrary(min, max) {
-            currentrandomId = Math.floor(Math.random() * (max - min) + min);
-            return currentrandomId;
-        }
-          }
-        
-        getRandomArbitrary(1,800)
-        fetch(`https://rickandmortyapi.com/api/character/${currentrandomId}`)
-        .then(response => response.json())
-        .then(characters =>  {
-            displayCharacters(characters);
-            
-        });
-    })

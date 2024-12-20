@@ -7,6 +7,7 @@ h1 {
     color: transparent;
     text-shadow: 0 0 1px yellow; 
     font-size: 60px;
+    row-gap: 1;
 }
 
 .logo{
@@ -80,29 +81,3 @@ a:hover {
     background-color: white;
     color: black;
 }
-
-.previous {
-    color: yellow;
-    font-size: 2vh;
-    font-family: 'Wubba Lubba Dub Dub', arial;
-}
-
-.next {
-    color: yellow;
-    font-size: 2vh;
-    font-family: 'Wubba Lubba Dub Dub', arial;
-}
-
-.footer {
-    text-align: center;
-    padding: 10px;
-    margin-top: 200px;
-    font-size: 25;
-    bottom: 0px;
-    font-family: 'Wubba Lubba Dub Dub', arial;
-}
-
-h4 {
-    color: yellow;
-}
-
