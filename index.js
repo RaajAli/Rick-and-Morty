@@ -59,39 +59,37 @@ const next = document.querySelector(".next");
 const previous = document.querySelector(".previous");
 const detailInfo = document.querySelector("#detailed-info");
 
+
+
 next.addEventListener("click", (e) => {
     e.preventDefault();
     const currentId = parseInt(charNames.getAttribute("data-id"));
-    console.log("Next button clicked. Current ID:", currentId); // Debug log
-    if (currentId && currentId <= 800) { 
+    if(currentId <= 800){ 
+        console.log(currentId);
         let nextId = currentId + 1;
-        console.log("Fetching next character ID:", nextId); // Debug log
         fetch(`https://rickandmortyapi.com/api/character/${nextId}`)
         .then(response => response.json())
-        .then(characters => {
+        .then(characters =>  {
             displayCharacters(characters);
         });
-    } else {
-        console.error("Invalid currentId or out of range.");
     }
 });
+
 
 previous.addEventListener("click", (e) => {
     e.preventDefault();
     const currentId = parseInt(charNames.getAttribute("data-id"));
-    console.log("Previous button clicked. Current ID:", currentId); // Debug log
-    if (currentId && currentId > 1) {
+    if(currentId > 1){
+        console.log(currentId);
         let previousId = currentId - 1;
-        console.log("Fetching previous character ID:", previousId); // Debug log
         fetch(`https://rickandmortyapi.com/api/character/${previousId}`)
         .then(response => response.json())
-        .then(characters => {
+        .then(characters =>  {
             displayCharacters(characters);
         });
-    } else {
-        console.error("Invalid currentId or out of range.");
     }
 });
+
 
 
 const randomButton = document.querySelector("#clickme");
