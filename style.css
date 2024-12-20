@@ -7,7 +7,7 @@ h1 {
     color: transparent;
     text-shadow: 0 0 1px yellow; 
     font-size: 60px;
-    row-gap: 1;
+    flex-wrap: wrap;
 }
 
 .logo{
@@ -17,30 +17,31 @@ h1 {
 }
 
 #character-bar {
-    height: 10vh;
     display: flex;
-    justify-content:space-between;
-    align-items: bottom;
-    padding-bottom: 3vh;
-    padding-top: 3vh;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     font-family: 'Wubba Lubba Dub Dub', arial;
-    text-decoration-color: white;
-    font-size: 23px;
 }
 
 #character-bar span {
-    height: 40%;
-    width: 20vw;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 3vh;
-    padding-top: 3vh;
-    align-items: center;
-    border-radius: 2em;
-    border: 1px solid w;
-    color: white;
+    display: block;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
+
+#character-bar span:hover {
+    transform: scale(1.1);
+    color: yellow;
+    background-color: black;
+}
+
 
 html, body {
     margin: 2;
@@ -70,6 +71,7 @@ input[type="submit"], button {
     border-radius: 5px;
     font-size: 15px;
     font-family: 'Wubba Lubba Dub Dub', arial;
+    cursor: pointer;
 }
 
 input[type="text"] {
