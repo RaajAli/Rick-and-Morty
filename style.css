@@ -54,7 +54,7 @@ html, body {
     padding: 50px;
     text-align: center;
     font-family: 'Wubba Lubba Dub Dub', arial;
-    color: whitesmoke;
+    color: yellow;
 }
 
 #image{
@@ -101,3 +101,8 @@ a:hover {
     bottom: 0px;
     font-family: 'Wubba Lubba Dub Dub', arial;
 }
+
+h4 {
+    color: yellow;
+}
+
