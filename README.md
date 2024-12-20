@@ -21,3 +21,7 @@ The five objects that will be returned from the API will be:
 • Species
 • An Image of Each Character
 
+As an user on this website, you can select from 5 characters and the five objects from above will be shown corresponding to each character.
+• The character names will be white once starting up the website.
+• Hovering over and leaving the character names will keep the name yellow permanently.
+• You can add the amount of likes on each character.
