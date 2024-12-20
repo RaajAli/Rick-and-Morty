@@ -27,6 +27,7 @@ h1 {
     padding-top: 3vh;
     font-family: 'Wubba Lubba Dub Dub', arial;
     text-decoration-color: white;
+    font-size: 23px;
 }
 
 #character-bar span {
@@ -46,4 +47,13 @@ h1 {
 html, body {
     margin: 0;
     padding: 0;
+}
+
+.characterInfo{
+    height: 500px;
+    font-size: 25px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Wubba Lubba Dub Dub', arial;
+    color: black;
 }
