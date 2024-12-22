@@ -54,3 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#reset-btn").addEventListener("click", (event) => {
             handleVotes(0, 0);
         })
+
+        
