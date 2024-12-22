@@ -29,7 +29,7 @@ h1 {
 #character-bar span {
     display: block;
     padding: 5px 10px;
-    font-size: 18px;
+    font-size: 25px;
     color: yellow;
     border-radius: 5px;
     cursor: pointer;
@@ -47,12 +47,13 @@ html, body {
     margin: 2;
     padding: 2;
     background-color: grey;
+    margin-bottom: 20px;
     background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/9531.jpg");
 }
 
 .characterInfo{
     height: 500px;
-    font-size: 25px;
+    font-size: 35px;
     padding: 50px;
     text-align: center;
     font-family: 'Wubba Lubba Dub Dub', arial;
@@ -69,13 +70,13 @@ input[type="submit"], button {
     background-color: yellow;
     color: black;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 25px;
     font-family: 'Wubba Lubba Dub Dub', arial;
     cursor: pointer;
 }
 
 input[type="text"] {
-    font-size: 2.5vh;
+    font-size: 3.5vh;
     font-family: 'Wubba Lubba Dub Dub', arial;
 }
 
