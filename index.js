@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         }
         function alertFunction() {
-            alert("Likes")
+            alert("Hit the sack, Jack!")
            }
         document.querySelector("#votes-form").addEventListener("submit", (e) =>{
             e.preventDefault();
